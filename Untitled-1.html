@@ -1,11 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Health Website</title>
+    <link rel="stylesheet" href="style.css"> <!-- You can link to a CSS file for styling here -->
+    <style>
+        /* Add inline CSS to center-align the title */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login to Your Health Account</h1>
+        <form action="login.php" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
 
-<!DOCKTYPE html>
-<html>
-    <head>
-        <title>Healthfit</title>
-    </head>
-    <body>
-        <img src="file:///C:/Users/Administrator/Desktop/healthfit.jfif">
-    </img>
-    </body>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+        <p>Forgot your password? <a href="forgot_password.html">Reset it here</a></p>
+        <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
+    </div>
+</body>
 </html>
